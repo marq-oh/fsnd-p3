@@ -54,7 +54,7 @@ def require_jwt(function):
         return function(*args, **kws)
     return decorated_function
 
-
+# adding comment so I can make a GitHub commit to check CodePipeline
 @APP.route('/', methods=['POST', 'GET'])
 def health():
     return jsonify("Healthy")
